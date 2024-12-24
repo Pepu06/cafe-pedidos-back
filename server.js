@@ -16,6 +16,11 @@ const preference = new Preference(client);
 app.use(cors());
 app.use(express.json());
 
+// Ruta de prueba
+app.get("/", (req, res) => {
+  res.send("Hello, World!");
+});
+
 // Endpoint para crear la preferencia
 app.post("/api/create_preference", async (req, res) => {
   try {
