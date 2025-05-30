@@ -7,7 +7,7 @@ const app = express();
 // Configurar MercadoPago
 const client = new MercadoPagoConfig({
   accessToken:
-    "APP_USR-32377018282451-122410-982d3f08a2344cad61562e62c4b7904b-1160620932",
+
 });
 
 const preference = new Preference(client);
